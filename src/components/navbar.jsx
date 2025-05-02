@@ -45,7 +45,6 @@ const Navbar = () => {
         <li className="border-b-2 border-zinc-400 w-full">Pricing</li>
         <div className="flex flex-col my-4 pr-4 gap-5.5">
           <button className="bg-transparent border-indigo-600 py-3 px-5 text-black  mb-3">
-            {" "}
             Sign In
           </button>
           <button className="px-5 py-3">Sign Up</button>
