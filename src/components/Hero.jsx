@@ -1,5 +1,5 @@
 import React from "react";
-import bgImg from "../assets/cybernetwork.jpg";
+import bgImg from "../assets/cybernetwork-removebg-preview.png";
 import {
   CloudUploadIcon,
   DatabaseIcon,
@@ -10,7 +10,7 @@ const Hero = () => {
   return (
     <section className="w-full h-screen  bg-zinc-200 flex flex-col justify-between ">
       <div className="grid  md:grid-cols-2 max-w-[1240px] m-auto  ">
-        <div className="flex flex-col justify-center md:items-start w-full px-2 py-2">
+        <div className="flex flex-col text-center justify-center md:items-start w-full px-2 py-2">
           <p
             className="font-bold text-xl  md:text-2xl"
             style={{ marginTop: "6rem" }}
@@ -24,23 +24,23 @@ const Hero = () => {
         <div className=" md:flex items-center">
           <img className="w-full md:my-20 h-2/4 " src={bgImg} alt="Cake" />
         </div>
-        <div className="m-5 absolute flex flex-col py-4  text-[2px] w-[300px]  md:min-w-[700px]  bottom-[-5%] left-0 mx-3 md:left-1/2 md:text-[15px] transform md:-translate-x-1/2 bg-zinc-100 border-slate-300 rounded-xl text-center shadow-2xl">
+        <div className="m-5 absolute flex flex-col py-4  text-[2px] w-full max-w-[90%]  sm:max-w-[500px] md:max-w-[700px]  bottom-[-5%] left-0 mx-3 md:left-1/2 md:text-[15px] transform md:-translate-x-1/2 bg-zinc-100 border-slate-300 rounded-xl text-center shadow-2xl">
           <p>Data Services</p>
           <div className="grid grid-cols-2 md:grid-cols-3 px-4 lg:grid-cols-4">
             <p className=" flex px-4 py-2 text-slate-500">
-              <CloudUploadIcon />
+              <CloudUploadIcon color="indigo" />
               App Data
             </p>
             <p className=" flex px-4 py-2 text-slate-500">
-              <DatabaseIcon />
+              <DatabaseIcon color="indigo" />
               Dashboard Designs
             </p>
             <p className=" flex px-4 py-2 text-slate-500">
-              <SendIcon />
+              <SendIcon color="indigo" />
               API Services
             </p>
             <p className=" flex px-4 py-2 text-slate-500">
-              <ServerIcon />
+              <ServerIcon color="indigo" />
               Cloud Data
             </p>
           </div>

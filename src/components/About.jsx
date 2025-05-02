@@ -1,29 +1,39 @@
-import React, { useState } from "react";
+import React from "react";
 
-const Search = ({ searchTerm, setSearchTerm }) => {
+const About = () => {
   return (
-    <div className=" search">
-      <div className="flex border-white border-2 gap-1.5">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 24 24"
-          width="15"
-          height="15"
-          fill="currentColor"
-        >
-          <path d="M18.031 16.6168L22.3137 20.8995L20.8995 22.3137L16.6168 18.031C15.0769 19.263 13.124 20 11 20C6.032 20 2 15.968 2 11C2 6.032 6.032 2 11 2C15.968 2 20 6.032 20 11C20 13.124 19.263 15.0769 18.031 16.6168ZM16.0247 15.8748C17.2475 14.6146 18 12.8956 18 11C18 7.1325 14.8675 4 11 4C7.1325 4 4 7.1325 4 11C4 14.8675 7.1325 18 11 18C12.8956 18 14.6146 17.2475 15.8748 16.0247L16.0247 15.8748Z"></path>
-        </svg>
+    // fragment
+    <div className="my-32 w-full">
+      {/* Cover */}
+      <div className="max-w-[1240px] m-auto">
+        <div className="text-center">
+          <h2 className="text-3xl font-bold">Trusted by developers across the world</h2>
+          <p className="text-xl py-6">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit vitae
+            iusto officiis nesciunt voluptates quia dolore velit perspiciatis
+            totam dolor fugit pariatur quod itaque ratione debitis, mollitia
+            nemo. Quisquam, omnis.
+          </p>
+        </div>
 
-        <input
-          className="outline-none"
-          type="text"
-          placeholder="Search through thousands of movies"
-          value={searchTerm}
-          onChange={(event) => setSearchTerm(event.target.value)}
-        />
+        {/* competitors */}
+        <div className="grid md:grid-cols-3 gap-2 px-2 text-center py-6">
+          <div className="border-t-1 border-gray-950 py-8 rounded-2xl shadow-2xl">
+            <p className="text-indigo-500 font-extrabold text-2xl">100%</p>
+            <p className="text-gray-500">Completion</p>
+          </div>
+          <div className="border-t-2 border-gray-950 py-8 rounded-2xl shadow-2xl">
+            <p className="text-indigo-500 font-extrabold text-2xl">24/7</p>
+            <p className="text-gray-500">Delivery</p>
+          </div>
+          <div className="border-t-2 border-gray-950 py-8 rounded-2xl shadow-2xl">
+            <p className="text-indigo-500 font-extrabold text-2xl">100K</p>
+            <p className="text-gray-500">Transaction</p>
+          </div>
+        </div>
       </div>
     </div>
   );
 };
 
-export default Search;
+export default About;
